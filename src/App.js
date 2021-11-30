@@ -25,7 +25,7 @@ const newTodo = (description) => ({
   description,
 });
 
-const INITIAL_STATE = [];
+const INITIAL_STATE = [newTodo("Buy milk"), newTodo("Buy coffee")];
 
 function reducer(state, action) {
   switch (action.type) {

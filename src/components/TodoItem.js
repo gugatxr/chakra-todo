@@ -26,7 +26,12 @@ export default function TodoItem({
         {todo.description}
       </Text>
 
-      <CloseButton size="sm" ml="auto" onClick={() => onRemoveClose(todo.id)} />
+      <CloseButton
+        size="sm"
+        ml="auto"
+        onClick={() => onRemoveClose(todo.id)}
+        title="Remove item"
+      />
     </Box>
   );
 }
